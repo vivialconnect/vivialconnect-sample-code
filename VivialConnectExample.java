@@ -47,8 +47,10 @@ public class VivialConnectExample {
     public static final String API_KEY = "";
     public static final String API_SECRET = "";
     public static final String ACCOUNT_ID = "";
-    public static final String BASE_URL = "https://api.vivialconnect.net/api/v1.0";
+    public static final String FROM_NUMBER = "";    /* Format: +1XXXXXXXXXX */
+    public static final String TO_NUMBER = "";      /* Format: +1XXXXXXXXXX */
 
+    public static final String BASE_URL = "https://api.vivialconnect.net/api/v1.0";
     public static final String ISO_8601_FORMAT = "yyyyMMdd'T'HHmmss'Z'";
     public static final String HTTP_DATE_FORMAT = "E, dd MMM YYYY HH:mm:ss z";
 
@@ -235,8 +237,8 @@ public class VivialConnectExample {
         Date now = new Date();
 
         String message = "Test message from Vivial Connect Java example";
-        String fromNumber = "+11234567890";
-        String toNumber = "+19876543210";
+        String fromNumber = VivialConnectExample.FROM_NUMBER;
+        String toNumber = VivialConnectExample.TO_NUMBER;
 
         String body = null;
 
