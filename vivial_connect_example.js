@@ -63,7 +63,7 @@ function makeRequest(method, url, data) {
             'Content-Type': 'application/json',
             'X-Auth-Date': signatureData.requestTimestamp,
             'X-Auth-SignedHeaders': 'accept;date;host',
-            Authorization: 'HMAC ' + api_key + ':' + signatureData.signature
+            'Authorization': 'HMAC ' + api_key + ':' + signatureData.signature
         },
         body: data
     };
