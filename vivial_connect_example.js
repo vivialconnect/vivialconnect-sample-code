@@ -1,4 +1,5 @@
 /* 
+ Requires node version 6+
  Install dependencies (request, moment, crypto-js, url)
  Fill in the empty constants (ln 15 - ln 19)
  Execute the script with the following command: node vivial_connect_example.js
